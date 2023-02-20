@@ -189,6 +189,6 @@ function getRandomSkill(myPerson: Person): Skill {
 
 // To test your solution, uncomment the following line and run `node app.js`
 
-console.log(`-----------\nExercise 6:\n-----------\nRandom Skill:\n${JSON.stringify(getRandomSkill(myPerson), null, 2)}\n`)
+// console.log(`-----------\nExercise 6:\n-----------\nRandom Skill:\n${JSON.stringify(getRandomSkill(myPerson), null, 2)}\n`)
 
 // --------------------------------------------------------------------------
