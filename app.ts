@@ -10,9 +10,6 @@ let favLunch: string = 'Pizza'
 let favDinner: string = 'Salmon and mashed potatoes'
 
 
-
-
-
 // --------------------------------------------------------------------------
 
 // To test your solution, uncomment the following line and run `node app.js`
@@ -33,12 +30,25 @@ let favDinner: string = 'Salmon and mashed potatoes'
 *   - an array of at least 3 skill objects as a value
 */
 
+type Skill = { 
+  name: string,
+  learned: boolean
+  }
 
-
-
-
-
-
+  const mySkills: Skill[] = [
+    {
+      name: 'javascript',
+      learned: false
+    },
+    {
+      name: 'react',
+      learned: false
+    },
+    {
+      name: 'git',
+      learned: true
+    }
+  ]
 
 
 // --------------------------------------------------------------------------

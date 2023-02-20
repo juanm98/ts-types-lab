@@ -8,21 +8,20 @@
 var favBreakfast = 'Eggs and Bacon';
 var favLunch = 'Pizza';
 var favDinner = 'Salmon and mashed potatoes';
-// --------------------------------------------------------------------------
-// To test your solution, uncomment the following line and run `node app.js`
-// console.log(`-----------\nExercise 1:\n-----------\nfavBreakfast: ${favBreakfast}\nfavLunch: ${favLunch}\nfavDinner: ${favDinner}\n`)
-// --------------------------------------------------------------------------
-/**
-* Exercise 2:
-* Part a)
-* Declare a type named Skill as an object with the following properties:
-*   - name as a string type
-*   - learned as a boolean type
-* Part b)
-* Create a variable named mySkills meeting the following criteria:
-*   - an array of Skill as the type
-*   - an array of at least 3 skill objects as a value
-*/
+var mySkills = [
+    {
+        name: 'javascript',
+        learned: false
+    },
+    {
+        name: 'react',
+        learned: false
+    },
+    {
+        name: 'git',
+        learned: true
+    }
+];
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following line and run `node app.js`
 // console.log(`-----------\nExercise 2:\n-----------\nmySkills:\n${JSON.stringify(mySkills, null, 2)}\n`)
