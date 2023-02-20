@@ -5,7 +5,9 @@
 *   - store a string data type.
 *   - have a value of your favorite meal.
 */
-
+let favBreakfast: string = 'Eggs and Bacon'
+let favLunch: string = 'Pizza'
+let favDinner: string = 'Salmon and mashed potatoes'
 
 
 

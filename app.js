@@ -5,6 +5,9 @@
 *   - store a string data type.
 *   - have a value of your favorite meal.
 */
+var favBreakfast = 'Eggs and Bacon';
+var favLunch = 'Pizza';
+var favDinner = 'Salmon and mashed potatoes';
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following line and run `node app.js`
 // console.log(`-----------\nExercise 1:\n-----------\nfavBreakfast: ${favBreakfast}\nfavLunch: ${favLunch}\nfavDinner: ${favDinner}\n`)
