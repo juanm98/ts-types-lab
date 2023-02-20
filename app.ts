@@ -79,6 +79,7 @@ type Person = {
   id: number,
   name: string,
   skills: Skill[]
+  meals: string[]
 }
 
 const myPerson = {
@@ -89,6 +90,9 @@ const myPerson = {
       name: 'express',
       learned: true
     }
+  ],
+  meals: [
+    favBreakfast, favLunch, favDinner
   ]
 }
 
@@ -116,7 +120,11 @@ const myPerson = {
 */
 
 
-
+function feedPerson(favBreakfast: string, favLunch: string, favDinner: string, myPerson: Person): void {
+  myPerson.meals.push(favBreakfast);
+  myPerson.meals.push(favLunch);
+  myPerson.meals.push(favDinner);
+}
 
 
 
@@ -127,7 +135,7 @@ const myPerson = {
 // To test your solution, uncomment the following lines and run `node app.js`
 
 // feedPerson(favBreakfast, favLunch, favDinner, myPerson)
-// console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
+console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
 
 // --------------------------------------------------------------------------
 

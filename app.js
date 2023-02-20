@@ -30,6 +30,9 @@ var myPerson = {
             name: 'express',
             learned: true
         }
+    ],
+    meals: [
+        favBreakfast, favLunch, favDinner
     ]
 };
 // --------------------------------------------------------------------------
@@ -44,10 +47,15 @@ var myPerson = {
 * The function should add each of the variables to the meals array.
 * The function should not return anything.
 */
+function feedPerson(favBreakfast, favLunch, favDinner, myPerson) {
+    myPerson.meals.push(favBreakfast);
+    myPerson.meals.push(favLunch);
+    myPerson.meals.push(favDinner);
+}
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following lines and run `node app.js`
 // feedPerson(favBreakfast, favLunch, favDinner, myPerson)
-// console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
+console.log("-----------\nExercise 4:\n-----------\nmyPerson:\n".concat(JSON.stringify(myPerson, null, 2), "\n"));
 // --------------------------------------------------------------------------
 /**
 * Exercise 5:
