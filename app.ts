@@ -75,7 +75,22 @@ type Skill = {
 *     - (skill should be different than the ones you used in Exercise 2)
 */
 
+type Person = {
+  id: number,
+  name: string,
+  skills: Skill[]
+}
 
+const myPerson = {
+  id: 117,
+  name: 'Juan',
+  skills: [
+    {
+      name: 'express',
+      learned: true
+    }
+  ]
+}
 
 
 

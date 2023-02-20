@@ -22,25 +22,16 @@ var mySkills = [
         learned: true
     }
 ];
-// --------------------------------------------------------------------------
-// To test your solution, uncomment the following line and run `node app.js`
-// console.log(`-----------\nExercise 2:\n-----------\nmySkills:\n${JSON.stringify(mySkills, null, 2)}\n`)
-// --------------------------------------------------------------------------
-/**
-* Exercise 3:
-* Part a)
-* Declare a type named Person as an object with the following properties:
-*   - id as a number type
-*   - name as a string type
-*   - skills as an array of type Skill
-*   - meals as an optional array of strings
-* Part b)
-* Create a variable named myPerson with a type Person with these properties:
-*   - any number as id
-*   - your name as name
-*   - an array containing one skill object as skills:
-*     - (skill should be different than the ones you used in Exercise 2)
-*/
+var myPerson = {
+    id: 117,
+    name: 'Juan',
+    skills: [
+        {
+            name: 'express',
+            learned: true
+        }
+    ]
+};
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following line and run `node app.js`
 // console.log(`-----------\nExercise 3:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
