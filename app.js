@@ -55,7 +55,7 @@ function feedPerson(favBreakfast, favLunch, favDinner, myPerson) {
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following lines and run `node app.js`
 // feedPerson(favBreakfast, favLunch, favDinner, myPerson)
-console.log("-----------\nExercise 4:\n-----------\nmyPerson:\n".concat(JSON.stringify(myPerson, null, 2), "\n"));
+// console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
 // --------------------------------------------------------------------------
 /**
 * Exercise 5:
@@ -65,6 +65,10 @@ console.log("-----------\nExercise 4:\n-----------\nmyPerson:\n".concat(JSON.str
 * The function should add each of the skill objects to the skills array.
 * The function should not return anything.
 */
+function teachPerson(myPerson, skills) {
+    var _a;
+    (_a = myPerson.skills).push.apply(_a, skills);
+}
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following lines and run `node app.js`
 // teachPerson(myPerson, mySkills)
@@ -76,7 +80,11 @@ console.log("-----------\nExercise 4:\n-----------\nmyPerson:\n".concat(JSON.str
 *   - myPerson
 * The function should return a random element from the skills array
 */
+function getRandomSkill(myPerson) {
+    var randomIndex = Math.floor(Math.random() * myPerson.skills.length);
+    return myPerson.skills[randomIndex];
+}
 // --------------------------------------------------------------------------
 // To test your solution, uncomment the following line and run `node app.js`
-// console.log(`-----------\nExercise 6:\n-----------\nRandom Skill:\n${JSON.stringify(getRandomSkill(myPerson), null, 2)}\n`)
+console.log("-----------\nExercise 6:\n-----------\nRandom Skill:\n".concat(JSON.stringify(getRandomSkill(myPerson), null, 2), "\n"));
 // --------------------------------------------------------------------------

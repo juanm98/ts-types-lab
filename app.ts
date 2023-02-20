@@ -135,7 +135,7 @@ function feedPerson(favBreakfast: string, favLunch: string, favDinner: string, m
 // To test your solution, uncomment the following lines and run `node app.js`
 
 // feedPerson(favBreakfast, favLunch, favDinner, myPerson)
-console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
+// console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(myPerson, null, 2)}\n`)
 
 // --------------------------------------------------------------------------
 
@@ -148,6 +148,9 @@ console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(
 * The function should not return anything.
 */
 
+function teachPerson(myPerson: Person, skills: Skill[]): void {
+  myPerson.skills.push(...skills);
+}
 
 
 
@@ -171,7 +174,10 @@ console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(
 * The function should return a random element from the skills array
 */
 
-
+function getRandomSkill(myPerson: Person): Skill {
+  const randomIndex = Math.floor(Math.random() * myPerson.skills.length)
+  return myPerson.skills[randomIndex]
+}
 
 
 
@@ -183,6 +189,6 @@ console.log(`-----------\nExercise 4:\n-----------\nmyPerson:\n${JSON.stringify(
 
 // To test your solution, uncomment the following line and run `node app.js`
 
-// console.log(`-----------\nExercise 6:\n-----------\nRandom Skill:\n${JSON.stringify(getRandomSkill(myPerson), null, 2)}\n`)
+console.log(`-----------\nExercise 6:\n-----------\nRandom Skill:\n${JSON.stringify(getRandomSkill(myPerson), null, 2)}\n`)
 
 // --------------------------------------------------------------------------
